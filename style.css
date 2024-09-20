@@ -2,18 +2,33 @@ body {
   color: aliceblue;
   background-color: black;
   font-family: "Quicksand", sans-serif;
+  margin: 0px;
 }
 header nav h1 {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
-  width: 20%;
+  gap: 30px;
+  margin: 20px;
+  font-size: 50px;
 }
-header nav h1 .prof {
+header nav h1 img {
   padding: 6px;
   border: 3px solid white;
-  width: 20%;
+  width: 100px;
   border-radius: 50%;
+}
+
+@media only screen and (max-width: 566px) {
+  header nav h1 img {
+    width: 50px;
+    gap: 10px;
+  }
+  header nav h1 {
+    justify-content: space-around;
+    margin-top: 30px;
+    font-size: 25px;
+  }
 }
 
 main .main-txt {
@@ -191,4 +206,66 @@ main .activites .cards .card div .btn {
   padding: 15px;
   border-radius: 20px;
   box-shadow: 0px 0px 20px white;
+}
+main .rols {
+  margin-top: 300px;
+}
+main .rols .owner {
+  margin-top: 300px;
+  text-align: center;
+  color: #272727;
+  text-shadow: 0 0 3px #ffd8d8, 0 0 15px #ff8e8e;
+  font-size: 50px;
+}
+main .rols .owners {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 200px;
+}
+main .rols .owners div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  border: 3px solid white;
+  border-radius: 30px;
+  box-shadow: 0px 0px 15px red;
+}
+main .rols .owners div img {
+  width: 70%;
+  margin: 0 auto;
+}
+main .rols .owners div h2 {
+  font-family: "Orbitron", sans-serif;
+  text-align: center;
+}
+main .rols .owners div p {
+  color: #ff0000;
+  text-align: center;
+}
+main .co-owners {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 200px;
+}
+main .co-owners div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  border: 3px solid white;
+  border-radius: 30px;
+  box-shadow: 0px 0px 35px rgb(255, 234, 0);
+}
+main .co-owners div img {
+  width: 70%;
+  margin: 0 auto;
+}
+main .co-owners div h2 {
+  font-family: "Orbitron", sans-serif;
+  text-align: center;
+}
+main .co-owners div p {
+  color: #ff0000;
+  text-align: center;
 }
